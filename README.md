@@ -1,9 +1,9 @@
 # java streams collect method
 How to use streams collect method to accumulate periods concatenating if overlapps.
 ```java
-List<Period> yourPeriodList = ...
+List<Period> periodList = ...
 List<Period> concatenatedPeriods = 
-      yourPeriodList.stream()
+      periodList.stream()
         .collect(PeriodList::new, PeriodList::add, PeriodList::combain)
         .get();        
 ```
